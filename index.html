@@ -347,26 +347,7 @@
         </div>
     </section>
 
-    <!-- Design Studio -->
-    <div class="editor-panel">
-        <h2 style="font-size:1.6rem;margin-bottom:0.5rem;">🎨 Design Studio</h2>
-        <p style="color:var(--text-muted);">Sesuaikan tampilan waitlist sesuai keinginanmu.</p>
-        
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:2rem;">
-            <div>
-                <label style="display:block;font-size:0.75rem;font-weight:700;color:var(--neon-blue);margin-bottom:8px;">NAMA PROYEK</label>
-                <input type="text" id="name-input" placeholder="ZORION" oninput="updateName(this.value)" 
-                       style="width:100%;padding:14px;background:rgba(0,0,0,0.2);border:1px solid var(--border-color);border-radius:12px;color:white;">
-            </div>
-            <div>
-                <label style="display:block;font-size:0.75rem;font-weight:700;color:var(--neon-blue);margin-bottom:8px;">LOGO</label>
-                <button class="btn" style="background:var(--surface-hover);width:100%;" onclick="document.getElementById('logo-file').click()">
-                    Unggah Logo Baru
-                </button>
-                <input type="file" id="logo-file" hidden onchange="updateLogo(event)">
-            </div>
-        </div>
-    </div>
+     
 
     <!-- Testimonials -->
     <div class="testimonials">
