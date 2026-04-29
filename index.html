@@ -293,41 +293,60 @@
 
     <nav>
         <div class="logo-container" style="display:flex;align-items:center;gap:12px;">
-            <img src="https://raw.githubusercontent.com/Efulsr/zorion.png/refs/heads/main/zorion123.png" alt="Logo" id="nav-logo" style="height:38px;">
+            <img src="https://raw.githubusercontent.com/Efulsr/zorion.png/refs/heads/main/zorion123.png" alt="ZORION" id="nav-logo" style="height:38px;">
             <span id="nav-name" style="font-weight:800;letter-spacing:2px;font-size:1.15rem;">ZORION</span>
         </div>
         <button class="btn" style="background:var(--surface-hover);color:var(--text-main);padding:0.5rem 1.2rem;font-size:0.8rem;" onclick="toggleTheme()">Ganti Tema</button>
     </nav>
 
-   <section class="hero">
-    <div class="mesh-bg"></div>
+      <section class="hero">
+        <div class="mesh-bg"></div>
 
-    <div id="hero-content-wrapper" class="horizontal-layout">
-        
-        <!-- Kiri: Logo -->
-        <div class="hero-logo-side">
-            <img src="Picsart_26-04-30_00-12-48-742.png" alt="ZORION" id="hero-logo" class="hero-logo-img">
-        </div>
+        <div id="hero-content-wrapper" style="text-align:center;max-width:1100px;margin:0 auto;">
+            <img src="https://raw.githubusercontent.com/Efulsr/zorion.png/refs/heads/main/zorion123.png" alt="ZORION" id="hero-logo" class="hero-logo-img">
 
-        <!-- Kanan: Teks + Form + Tasks -->
-        <div class="hero-content-side">
             <span class="waitlist-badge">EARLY ACCESS • TESTNET</span>
             <h1 class="hero-project-name">Pintu Masa Depan AI Telah Terbuka</h1>
-            <p style="font-size:1.15rem; color:var(--text-muted); max-width:520px;">
-                Dapatkan akses prioritas ke infrastruktur <span id="hero-name-inline" style="color:var(--neon-blue); font-weight:700;">ZORION</span>
+            <p style="font-size:1.15rem;color:var(--text-muted);max-width:620px;margin:0 auto 2rem;">
+                Dapatkan akses prioritas ke infrastruktur <span id="hero-name-inline" style="color:var(--neon-blue);font-weight:700;">ZORION</span>
             </p>
 
             <!-- Social Tasks -->
             <div class="social-tasks" id="social-tasks">
                 <a href="https://x.com/ZorionHQ" target="_blank" class="social-link" onclick="completeTask('twitter')">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    Follow @ZorionHQ
+                    Follow X
                 </a>
                 <a href="https://t.me/ZorionOfficial" target="_blank" class="social-link" onclick="completeTask('telegram')">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0C5.352 0 0 5.352 0 11.944c0 6.592 5.352 11.944 11.944 11.944 6.592 0 11.944-5.352 11.944-11.944C23.888 5.352 18.536 0 11.944 0zm5.836 8.358l-1.954 9.213c-.146.657-.538.818-1.085.511l-2.977-2.196-1.436 1.383c-.158.158-.292.292-.598.292l.213-3.036 5.525-4.992c.24-.213-.053-.332-.37-.12l-6.83 4.298-2.942-.92c-.64-.2-.653-.64.133-.946l11.5-4.43c.532-.193.998.126.814.943z"/></svg>
                     Join Telegram
                 </a>
             </div>
+
+            <!-- Progress -->
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <p style="font-size:0.85rem;color:var(--text-muted);margin-top:8px;">Complete the task to unlock the form</p>
+            </div>
+
+            <!-- Counter -->
+            <div class="join-counter">
+                Already <span id="counter" class="number">24339</span>  people have joined
+            </div>
+
+            <!-- Form -->
+            <div class="waitlist-form" id="waitlist-area">
+                <input type="email" id="email-input" placeholder="Enter a valid email address...">
+                <button class="btn btn-primary" onclick="handleJoin()">Join Waitlist</button>
+            </div>
+            <p id="requirement-note" style="font-size:0.8rem;color:var(--text-muted);margin-top:12px;">
+                * Selesaikan tugas sosial di atas
+            </p>
+        </div>
+    </section>
+
 
             <!-- Progress Bar -->
             <div class="progress-container">
@@ -338,7 +357,7 @@
 
             <!-- Counter -->
             <div class="join-counter">
-                Sudah <span id="counter" class="number">12458</span> orang bergabung
+                already <span id="counter" class="number">24339</span> people have joined
             </div>
 
             <!-- Form -->
@@ -347,7 +366,7 @@
                 <button class="btn btn-primary" onclick="handleJoin()">Join Waitlist</button>
             </div>
             <p id="requirement-note" style="font-size:0.8rem; color:var(--text-muted); margin-top:12px;">
-                * Selesaikan tugas sosial di atas
+                Complete the social tasks above
             </p>
         </div>
     </div>
