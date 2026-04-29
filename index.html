@@ -328,12 +328,12 @@
                 <div class="progress-bar">
                     <div id="progress-fill" class="progress-fill"></div>
                 </div>
-                <p style="font-size:0.85rem;color:var(--text-muted);margin-top:8px;">Selesaikan tugas untuk membuka form</p>
+                <p style="font-size:0.85rem;color:var(--text-muted);margin-top:8px;">Complete the task to unlock the form</p>
             </div>
 
             <!-- Counter -->
             <div class="join-counter">
-                Sudah <span id="counter" class="number">12458</span> orang bergabung
+                Already  <span id="counter" class="number">28006</span> people have joined
             </div>
 
             <!-- Form -->
@@ -342,31 +342,14 @@
                 <button class="btn btn-primary" onclick="handleJoin()">Join Waitlist</button>
             </div>
             <p id="requirement-note" style="font-size:0.8rem;color:var(--text-muted);margin-top:12px;">
-                * Selesaikan tugas sosial di atas
+                * Complete the social tasks above
             </p>
         </div>
     </section>
 
      
 
-    <!-- Testimonials -->
-    <div class="testimonials">
-        <h2 style="text-align:center;margin-bottom:2.5rem;font-size:1.8rem;">Trusted by Early Builders</h2>
-        <div class="testimonial-grid">
-            <div class="testimonial-card">
-                <p>"Infrastruktur AI yang sangat cepat. ZORION benar-benar game changer."</p>
-                <p style="margin-top:1rem;font-weight:600;">— Alex Rivera, Founder of NeuralForge</p>
-            </div>
-            <div class="testimonial-card">
-                <p>"Akses early testnet ini memberikan kami keunggulan kompetitif yang besar."</p>
-                <p style="margin-top:1rem;font-weight:600;">— Sarah Chen, AI Researcher @ QuantumMind</p>
-            </div>
-            <div class="testimonial-card">
-                <p>"UI/UX dan performa jauh di atas kompetitor. Sangat recommended."</p>
-                <p style="margin-top:1rem;font-weight:600;">— Michael Torres, CTO at Synthwave AI</p>
-            </div>
-        </div>
-    </div>
+    
 
     <footer style="padding:4rem 5%;text-align:center;color:var(--text-muted);border-top:1px solid var(--border-color);">
         <p>&copy; 2026 <span id="footer-name">ZORION</span> Network. All Rights Reserved.</p>
@@ -387,7 +370,7 @@
         function handleJoin() {
             const email = document.getElementById('email-input').value.trim();
             if (!email || !email.includes('@')) {
-                alert("Masukkan email yang valid!");
+                alert("Enter a valid email!");
                 return;
             }
 
