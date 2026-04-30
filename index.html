@@ -291,26 +291,50 @@
     <div class="cursor-dot"></div>
     <canvas id="network-canvas" style="position:fixed;top:0;left:0;z-index:-2;opacity:0.7;"></canvas>
 
-    <nav>
-        <div class="logo-container" style="display:flex;align-items:center;gap:12px;">
-            <img src="https://raw.githubusercontent.com/Efulsr/zorion-png/refs/heads/main/Picsart_26-04-30_00-12-15-119.png" style="height:200px;">
-            <span id="nav-name" style="font-weight:800;letter-spacing:2px;font-size:1.15rem;"></span>
-        </div>
-        <button class="btn" style="background:var(--surface-hover);color:var(--text-main);padding:0.5rem 1.2rem;font-size:0.8rem;" onclick="toggleTheme()">🌙</button>
-    </nav>
+  <!-- Navigation -->
+<nav class="flex items-center justify-between px-6 py-4 backdrop-blur-md sticky top-0 z-50">
+  <div class="flex items-center gap-3">
+    <img src="https://raw.githubusercontent.com/Efulsr/zorion-png/refs/heads/main/Picsart_26-04-30_00-12-15-119.png" 
+         alt="Zorion Logo" 
+         class="h-10 w-auto object-contain">
+    <span id="nav-name" class="font-extrabold tracking-widest text-lg uppercase"></span>
+  </div>
+  
+  <button class="btn bg-[var(--surface-hover)] text-[var(--text-main)] px-5 py-2 text-sm rounded-full transition-all hover:opacity-80" 
+          onclick="toggleTheme()">
+    🌙
+  </button>
+</nav>
 
-    <section class="hero">
-        <div class="mesh-bg"></div>
+<!-- Hero Section -->
+<section class="hero relative min-h-[90vh] flex flex-col items-center justify-center px-4 overflow-hidden">
+  <div class="mesh-bg absolute inset-0 -z-10"></div>
 
-        <div id="hero-content-wrapper" style="text-align:center;max-width:1100px;margin:0 auto;">
-            <img src="https://raw.githubusercontent.com/Efulsr/zorion-png/refs/heads/main/Picsart_26-04-30_00-12-15-119.png" class="hero-logo-img">
+  <div id="hero-content-wrapper" class="text-center max-w-5xl mx-auto space-y-6">
+    <!-- Logo Hero -->
+    <img src="https://raw.githubusercontent.com/Efulsr/zorion-png/refs/heads/main/Picsart_26-04-30_00-12-15-119.png" 
+         alt="Zorion Ventures" 
+         class="hero-logo-img mx-auto h-32 md:h-40 object-contain mb-4">
 
-            <span class="waitlist-badge">EARLY ACCESS • TESTNET</span>
-            <h1 class="hero-project-name">The Door to the Future of AI Has Opened</h1>
-            <p style="font-size:1.15rem;color:var(--text-muted);max-width:620px;margin:0 auto 2rem;">
-                Get priority access to infrastructure  <span id="hero-name-inline" style="color:var(--neon-blue);font-weight:700;">ZORION</span>
-            </p>
+    <!-- Badge -->
+    <div class="inline-block px-4 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 backdrop-blur-sm">
+      <span class="waitlist-badge text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-blue-400">
+        Early Access • Testnet
+      </span>
+    </div>
 
+    <!-- Title -->
+    <h1 class="hero-project-name text-4xl md:text-7xl font-bold tracking-tight text-white leading-tight">
+      The Door to the Future <br class="hidden md:block"> of AI Has Opened
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="text-lg md:text-xl text-[var(--text-muted)] max-w-2xl mx-auto font-light leading-relaxed">
+      Get priority access to infrastructure 
+      <span id="hero-name-inline" class="text-[var(--neon-blue)] font-bold">ZORION</span>
+    </p>
+  </div>
+</section>
             <!-- Social Tasks -->
             <div class="social-tasks" id="social-tasks">
                 <a href="https://x.com/ZorionHQ" target="_blank" class="social-link" onclick="completeTask('twitter')">
