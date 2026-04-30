@@ -296,7 +296,7 @@
             <img src="Picsart_26-04-30_00-12-48-742.png" alt="Logo" id="nav-logo" style="height:38px;">
             <span id="nav-name" style="font-weight:800;letter-spacing:2px;font-size:1.15rem;">ZORION</span>
         </div>
-        <button class="btn" style="background:var(--surface-hover);color:var(--text-main);padding:0.5rem 1.2rem;font-size:0.8rem;" onclick="toggleTheme()">Ganti Tema</button>
+        <button class="btn" style="background:var(--surface-hover);color:var(--text-main);padding:0.5rem 1.2rem;font-size:0.8rem;" onclick="toggleTheme()">🌙</button>
     </nav>
 
     <section class="hero">
@@ -306,9 +306,9 @@
             <img src="Picsart_26-04-30_00-12-48-742.png" alt="ZORION" id="hero-logo" class="hero-logo-img">
 
             <span class="waitlist-badge">EARLY ACCESS • TESTNET</span>
-            <h1 class="hero-project-name">Pintu Masa Depan AI Telah Terbuka</h1>
+            <h1 class="hero-project-name">The Door to the Future of AI Has Opened</h1>
             <p style="font-size:1.15rem;color:var(--text-muted);max-width:620px;margin:0 auto 2rem;">
-                Dapatkan akses prioritas ke infrastruktur <span id="hero-name-inline" style="color:var(--neon-blue);font-weight:700;">ZORION</span>
+                Get priority access to infrastructure  <span id="hero-name-inline" style="color:var(--neon-blue);font-weight:700;">ZORION</span>
             </p>
 
             <!-- Social Tasks -->
@@ -328,12 +328,12 @@
                 <div class="progress-bar">
                     <div id="progress-fill" class="progress-fill"></div>
                 </div>
-                <p style="font-size:0.85rem;color:var(--text-muted);margin-top:8px;">Selesaikan tugas untuk membuka form</p>
+                <p style="font-size:0.85rem;color:var(--text-muted);margin-top:8px;">Complete the task to open the form</p>
             </div>
 
             <!-- Counter -->
             <div class="join-counter">
-                Sudah <span id="counter" class="number">12458</span> orang bergabung
+                Already <span id="counter" class="number">24798</span> people join
             </div>
 
             <!-- Form -->
@@ -342,50 +342,14 @@
                 <button class="btn btn-primary" onclick="handleJoin()">Join Waitlist</button>
             </div>
             <p id="requirement-note" style="font-size:0.8rem;color:var(--text-muted);margin-top:12px;">
-                * Selesaikan tugas sosial di atas
+                Complete the social tasks above
             </p>
         </div>
     </section>
 
-    <!-- Design Studio -->
-    <div class="editor-panel">
-        <h2 style="font-size:1.6rem;margin-bottom:0.5rem;">🎨 Design Studio</h2>
-        <p style="color:var(--text-muted);">Sesuaikan tampilan waitlist sesuai keinginanmu.</p>
-        
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:2rem;">
-            <div>
-                <label style="display:block;font-size:0.75rem;font-weight:700;color:var(--neon-blue);margin-bottom:8px;">NAMA PROYEK</label>
-                <input type="text" id="name-input" placeholder="ZORION" oninput="updateName(this.value)" 
-                       style="width:100%;padding:14px;background:rgba(0,0,0,0.2);border:1px solid var(--border-color);border-radius:12px;color:white;">
-            </div>
-            <div>
-                <label style="display:block;font-size:0.75rem;font-weight:700;color:var(--neon-blue);margin-bottom:8px;">LOGO</label>
-                <button class="btn" style="background:var(--surface-hover);width:100%;" onclick="document.getElementById('logo-file').click()">
-                    Unggah Logo Baru
-                </button>
-                <input type="file" id="logo-file" hidden onchange="updateLogo(event)">
-            </div>
-        </div>
-    </div>
+    
 
-    <!-- Testimonials -->
-    <div class="testimonials">
-        <h2 style="text-align:center;margin-bottom:2.5rem;font-size:1.8rem;">Trusted by Early Builders</h2>
-        <div class="testimonial-grid">
-            <div class="testimonial-card">
-                <p>"Infrastruktur AI yang sangat cepat. ZORION benar-benar game changer."</p>
-                <p style="margin-top:1rem;font-weight:600;">— Alex Rivera, Founder of NeuralForge</p>
-            </div>
-            <div class="testimonial-card">
-                <p>"Akses early testnet ini memberikan kami keunggulan kompetitif yang besar."</p>
-                <p style="margin-top:1rem;font-weight:600;">— Sarah Chen, AI Researcher @ QuantumMind</p>
-            </div>
-            <div class="testimonial-card">
-                <p>"UI/UX dan performa jauh di atas kompetitor. Sangat recommended."</p>
-                <p style="margin-top:1rem;font-weight:600;">— Michael Torres, CTO at Synthwave AI</p>
-            </div>
-        </div>
-    </div>
+  
 
     <footer style="padding:4rem 5%;text-align:center;color:var(--text-muted);border-top:1px solid var(--border-color);">
         <p>&copy; 2026 <span id="footer-name">ZORION</span> Network. All Rights Reserved.</p>
@@ -406,7 +370,7 @@
         function handleJoin() {
             const email = document.getElementById('email-input').value.trim();
             if (!email || !email.includes('@')) {
-                alert("Masukkan email yang valid!");
+                alert("Enter a valid email address!");
                 return;
             }
 
@@ -415,11 +379,11 @@
 
             formArea.innerHTML = `
                 <div style="padding:2rem 1.5rem;text-align:center;width:100%;">
-                    <h3 style="color:#10b981;margin-bottom:8px;">✅ Pendaftaran Berhasil!</h3>
-                    <p style="color:var(--text-muted);margin-bottom:1.5rem;">Email <strong>${email}</strong> telah masuk dalam daftar prioritas.</p>
+                    <h3 style="color:#10b981;margin-bottom:8px;">✅ Registration Successful!</h3>
+                    <p style="color:var(--text-muted);margin-bottom:1.5rem;">Email <strong>${email}</strong> has been included in the priority list </p>
                     
                     <div class="referral-box">
-                        <p style="font-size:0.95rem;margin-bottom:8px;">Bagikan referral link kamu:</p>
+                        <p style="font-size:0.95rem;margin-bottom:8px;">Share your referral link:</p>
                         <div style="background:rgba(0,0,0,0.3);padding:12px;border-radius:12px;font-family:monospace;font-size:0.9rem;margin-bottom:10px;" id="ref-link">
                             https://zorion.ai/?ref=${btoa(email).slice(0,12)}
                         </div>
